@@ -4,53 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tambah Gambar</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-    }
-
-    #preview {
-      max-width: 300px;
-      max-height: 300px;
-      margin-top: 20px;
-      display: none;
-      border-radius: 10px;
-    }
-
-    input, button {
-      margin-top: 15px;
-      padding: 10px;
-    }
-  </style>
+  <title>Galeri Gambar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
+    <h1>Galeri Gambar</h1>
+    <p>Kumpulan gambar favorit Anda</p>
+  </header>
 
-  <h2>Tambah Gambar dari Komputer</h2>
+  <main class="container">
+    <section class="upload-box">
+      <h2>Tambahkan Gambar</h2>
+      <p>Pilih gambar dari perangkat Anda</p>
+      <input type="file" id="imageInput" accept="image/*" multiple>
+    </section>
 
-  <input type="file" id="gambar" accept="image/*">
+    <section class="gallery" id="gallery">
+      <article class="image-card">
+        <img src="images/contoh.jpg"
+             alt="Contoh gambar"
+             onerror="this.parentElement.remove()">
+        <p>Contoh gambar</p>
+      </article>
+    </section>
+  </main>
 
-  <br>
+  <footer>
+    <p>&copy; 2026 Galeri Gambar</p>
+  </footer>
 
-  <img id="preview" alt="Pratinjau gambar">
-
-  <script>
-    const input = document.getElementById("gambar");
-    const preview = document.getElementById("preview");
-
-    input.addEventListener("change", function () {
-      const file = this.files[0];
-
-      if (file && file.type.startsWith("image/")) {
-        preview.src = URL.createObjectURL(file);
-        preview.style.display = "block";
-      } else {
-        preview.style.display = "none";
-      }
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
