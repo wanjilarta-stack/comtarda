@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nama Blog</title>
+  <meta name="description" content="Blog informasi, tips, hiburan, dan artikel menarik.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="#" class="logo"><span class="logo-icon">✦</span> Nama Blog</a>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#terbaru">Terbaru</a>
+      <a href="#populer">Populer</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="darkMode" aria-label="Mode gelap">🌙</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="badge">SELAMAT DATANG</span>
+      <h1>Temukan Informasi <span>Menarik Setiap Hari</span></h1>
+      <p>Kumpulan artikel, informasi, tips, hiburan, dan berbagai konten menarik untuk Anda.</p>
+      <a href="#terbaru" class="hero-button">Mulai Membaca →</a>
+    </div>
+  </div>
+</section>
+
+<main class="container main-layout">
+  <section class="content">
+    <div class="section-heading" id="terbaru">
+      <div>
+        <span class="small-title">UPDATE</span>
+        <h2>Postingan Terbaru</h2>
+      </div>
+    </div>
+
+    <article class="post-card">
+      <a href="#" class="post-image">
+        <img src="https://picsum.photos/800/450?random=1" alt="Tips menarik">
+      </a>
+      <div class="post-body">
+        <div class="post-meta"><span>📅 25 September 2026</span><span>•</span><span>Tips</span></div>
+        <h2><a href="#">Tips Menarik yang Bisa Anda Coba Hari Ini</a></h2>
+        <p>Temukan berbagai tips menarik dan informasi yang dapat membantu aktivitas Anda sehari-hari.</p>
+        <a href="#" class="read-more">Baca Selengkapnya →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <a href="#" class="post-image">
+        <img src="https://picsum.photos/800/450?random=2" alt="Informasi terbaru">
+      </a>
+      <div class="post-body">
+        <div class="post-meta"><span>📅 24 September 2026</span><span>•</span><span>Informasi</span></div>
+        <h2><a href="#">Informasi Terbaru dan Menarik untuk Dibaca</a></h2>
+        <p>Berbagai informasi pilihan yang dirangkum secara sederhana agar mudah dipahami.</p>
+        <a href="#" class="read-more">Baca Selengkapnya →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <a href="#" class="post-image">
+        <img src="https://picsum.photos/800/450?random=3" alt="Konten pilihan">
+      </a>
+      <div class="post-body">
+        <div class="post-meta"><span>📅 23 September 2026</span><span>•</span><span>Hiburan</span></div>
+        <h2><a href="#">Konten Pilihan yang Sedang Banyak Dibicarakan</a></h2>
+        <p>Simak artikel pilihan dan berbagai konten terbaru yang menarik untuk Anda.</p>
+        <a href="#" class="read-more">Baca Selengkapnya →</a>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <a href="#" class="post-image">
+        <img src="https://picsum.photos/800/450?random=4" alt="Gaya hidup">
+      </a>
+      <div class="post-body">
+        <div class="post-meta"><span>📅 22 September 2026</span><span>•</span><span>Gaya Hidup</span></div>
+        <h2><a href="#">Inspirasi dan Gaya Hidup untuk Anda</a></h2>
+        <p>Inspirasi sederhana yang bisa menjadi referensi dalam menjalani aktivitas sehari-hari.</p>
+        <a href="#" class="read-more">Baca Selengkapnya →</a>
+      </div>
+    </article>
+
+    <button class="load-more" id="loadMore">Tampilkan Lebih Banyak</button>
+  </section>
+
+  <aside class="sidebar">
+    <div class="sidebar-box search-box">
+      <h3>Cari Artikel</h3>
+      <div class="search">
+        <input type="search" id="searchInput" placeholder="Cari artikel..." aria-label="Cari artikel">
+        <button id="searchBtn" aria-label="Cari">🔍</button>
+      </div>
+    </div>
+
+    <div class="sidebar-box" id="tentang">
+      <h3>Tentang Blog</h3>
+      <p>Selamat datang di Nama Blog. Temukan berbagai informasi menarik, tips, hiburan, dan artikel terbaru.</p>
+    </div>
+
+    <div class="sidebar-box" id="populer">
+      <h3>Artikel Populer</h3>
+      <div class="popular-post">
+        <img src="https://picsum.photos/100/70?random=10" alt="">
+        <div><span>01</span><a href="#">Artikel populer pertama</a></div>
+      </div>
+      <div class="popular-post">
+        <img src="https://picsum.photos/100/70?random=11" alt="">
+        <div><span>02</span><a href="#">Artikel populer kedua</a></div>
+      </div>
+      <div class="popular-post">
+        <img src="https://picsum.photos/100/70?random=12" alt="">
+        <div><span>03</span><a href="#">Artikel populer ketiga</a></div>
+      </div>
+    </div>
+
+    <div class="sidebar-box" id="kategori">
+      <h3>Kategori</h3>
+      <div class="categories">
+        <a href="#">Informasi <span>12</span></a>
+        <a href="#">Tips <span>8</span></a>
+        <a href="#">Hiburan <span>15</span></a>
+        <a href="#">Gaya Hidup <span>7</span></a>
+        <a href="#">Teknologi <span>10</span></a>
+      </div>
+    </div>
+
+    <div class="ad-box">
+      <span>ADVERTISEMENT</span>
+      <div>Tempat Iklan</div>
+    </div>
+  </aside>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Nama Blog</h3>
+      <p>Blog informasi dan konten menarik untuk menemani aktivitas Anda.</p>
+    </div>
+    <div>
+      <h3>Navigasi</h3>
+      <a href="#home">Home</a>
+      <a href="#terbaru">Terbaru</a>
+      <a href="#populer">Populer</a>
+    </div>
+    <div>
+      <h3>Ikuti Kami</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="copyright">© 2026 Nama Blog. All Rights Reserved.</div>
+</footer>
+
+<button id="backTop" class="back-top" aria-label="Kembali ke atas">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
